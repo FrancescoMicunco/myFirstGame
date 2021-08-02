@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BlackJack</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="bigTitle">GIOCHIAMO A BLACK JACK</h1>
+        <div class="flex">
+            <h3>IL TUO CASH ATTUALE: $ </h3>
+            <h3 id="punteggio"></h3>
+        </div>
+        <div class="flex">
+
+            <button onclick="nuovaPartita()">NUOVA PARTITA</button>
+            <button style="display:none" id="daiCarte" onclick="carteGiocatore1()">DAI LE CARTE!</button>
+        </div>
+        <h2 id="messaggio"></h2>
+    </div>
+    <div class="totalContainer">
+
+        <!-- area delle carte del banco -->
+
+        <div class="container">
+            <div class="containerTop">
+                <h2 class="medTitle">CARTE DEL BANCO</h2>
+                <p class="carte" id="card-Bank"></p>
+            </div>
+
+            <div>
+                <p class="back" id="totaleBank"></p>
+            </div>
+        </div>
+        <!-- area delle carte del Giocatore -->
+
+
+        <div class="container">
+            <div class="containerBot">
+                <h2 class="medTitle">CARTE DEL GIOCATORE</h2>
+                <p class="carte " id="card-Player"></p>
+            </div>
+            <div>
+                <p class="back" id="totalePlayer"></p>
+            </div>
+            <div class="flex">
+                <button onclick="nuovaCarta()" id="yes">si</button>
+                <button onclick="carteAlBanco()" id="no">no</button>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+
+    <script src="index.js" async defer></script>
+</body>
+
+</html>
